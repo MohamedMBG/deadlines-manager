@@ -41,7 +41,7 @@
                     android:text="Title No1"
                     android:layout_margin="5dp"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/lexend_semiBold"
+                    android:fontFamily="@font/lexend_black"
                     android:textSize="24sp"/>
 
                 <Space
