@@ -9,7 +9,7 @@ import com.example.deadline.entities.Project
 @Dao
 interface ProjectDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(project: Project)
+    suspend fun insertProject(project: Project)
 
     @Query("SELECT * FROM projects WHERE userId = :userId")
     suspend fun getProjectsByUserId(userId: Int): List<Project>

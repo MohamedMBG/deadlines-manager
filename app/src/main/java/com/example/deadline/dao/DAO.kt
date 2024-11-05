@@ -9,7 +9,7 @@ import com.example.deadline.entities.User
 @Dao
 interface UserDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(user: User)
+    suspend fun insertUser(user: User) : Long
 
     @Query("SELECT * FROM user WHERE userId = :userId")
     suspend fun getUserById(userId: Int): User?
